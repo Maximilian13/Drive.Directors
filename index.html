@@ -10,29 +10,35 @@
 <body>
     <img class="background" src="background.jpg" alt="">
     <div class="container">
-        <input type="radio" name="slider" id="item-1" checked>
-        <input type="radio" name="slider" id="item-2">
-        <input type="radio" name="slider" id="item-3">
-        <input type="radio" name="slider" id="item-4">
-        <input type="radio" name="slider" id="item-5">
-        <input type="radio" name="slider" id="item-6">
+        <input class="radio" type="radio" name="slider" id="item-1" checked>
+        <input class="radio" type="radio" name="slider" id="item-2">
+        <input class="radio" type="radio" name="slider" id="item-3">
+        <input class="radio" type="radio" name="slider" id="item-4">
+        <input class="radio" type="radio" name="slider" id="item-5">
+        <input class="radio" type="radio" name="slider" id="item-6">
       <div class="cards">
         <label class="card" for="item-1" id="song-1">
+          <p class="character-level">Уровень 1</p>
           <img src="Фотки директоров/ванькавстанька.png" alt="song">
         </label>
         <label class="card" for="item-2" id="song-2">
+          <p class="character-level">Уровень 1</p>
           <img src="Фотки директоров/дашкаТ.png" alt="song">
         </label>
         <label class="card" for="item-3" id="song-3">
+          <p class="character-level">Уровень 1</p>
           <img src="Фотки директоров/крымнаш.png" alt="song">
         </label>
         <label class="card" for="item-4" id="song-4">
+          <p class="character-level">Уровень 1</p>
             <img src="Фотки директоров/лизаясеньпень.png" alt="song">
         </label>
         <label class="card" for="item-5" id="song-5">
+          <p class="character-level">Уровень 1</p>
             <img src="Фотки директоров/машазелень.png" alt="song">
         </label>
         <label class="card" for="item-6" id="song-6">
+          <p class="character-level">Уровень 1</p>
             <img src="Фотки директоров/попошка.png" alt="song">
         </label>
       </div>
@@ -40,19 +46,19 @@
         <div class="upper-part">
           <div class="info-area" id="test">
             <label class="song-info" id="song-info-1">
-              <div class="title">Иван Залипаев</div>
+              <div class="title">АнимеЭльф!</div>
               <div class="sub-line">
                 <div class="subtitle">On Drive</div>
               </div>
             </label>
             <label class="song-info" id="song-info-2">
-              <div class="title">Даша Толшмякова</div>
+              <div class="title">Дашулька🤙</div>
               <div class="sub-line">
                 <div class="subtitle">Drive In</div>
               </div>
             </label>
             <label class="song-info" id="song-info-3">
-              <div class="title">Даша Крымова</div>
+              <div class="title">Даша Крым наш</div>
               <div class="sub-line">
                 <div class="subtitle">Drive Art</div>
               </div>
@@ -70,13 +76,25 @@
                 </div>
             </label>
             <label class="song-info" id="song-info-6">
-                <div class="title">Полина Нестерова</div>
+                <div class="title">Попо Шанель 🛹</div>
                 <div class="sub-line">
                   <div class="subtitle">Drive SMM</div>
                 </div>
             </label>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="popup">
+      <div class="dark"></div>
+      <div class="popup-content">
+        <h1 id="person-name">Тут будут чьи-то имена!</h1>
+        <h3 id="person-city">Город: Хуйня</h3>
+        <h3 id="person-trait">Если ты это читаешь, то ты умничка)</h3>
+        <h1 id="person-cristalls"><span>10</span><img src="coin.png" alt=""></h1>
+        <h1 id="person-param"><label for="param-1">Менеджмент:</label><progress id="param-1" max="100" value="70"> 70% </progress></h1>
+        <h1 id="person-param"><label for="param-2">Креативность:</label><progress id="param-2" max="100" value="70"> 70% </progress></h1>
+        <h1 id="person-param"><label for="param-3">Инициативность:</label><progress id="param-3" max="100" value="70"> 70% </progress></h1>
       </div>
     </div>
     <script src="script.js"></script>
