@@ -56,6 +56,7 @@ input[type=radio] {
 }
 
 .card h3 {
+  text-shadow:1px 0 0 black,0 1px 0 black,-1px 0 0 black,0 -1px 0 black;
   text-align: center;
   font-family: 'Press Start 2P', cursive;
   font-size: 30px;
@@ -89,33 +90,68 @@ img {
   object-fit: cover;
 }
 
-#item-1:checked ~ .cards #song-5, #item-2:checked ~ .cards #song-6, #item-3:checked ~ .cards #song-1, #item-4:checked ~ .cards #song-2, #item-5:checked ~ .cards #song-3, #item-6:checked ~ .cards #song-4 {
+#item-1:checked ~ .cards #song-8, #item-2:checked ~ .cards #song-9, #item-3:checked ~ .cards #song-1, #item-4:checked ~ .cards #song-2, #item-5:checked ~ .cards #song-3, #item-6:checked ~ .cards #song-4 , #item-7:checked ~ .cards #song-5, #item-8:checked ~ .cards #song-6, #item-9:checked ~ .cards #song-7  {
   transform: translatex(-160%) scale(.6);
   z-index: 0;
 }
 
-#item-1:checked ~ .cards #song-6, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2, #item-4:checked ~ .cards #song-3, #item-5:checked ~ .cards #song-4, #item-6:checked ~ .cards #song-5 {
+#item-1:checked ~ .cards #song-9, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2, #item-4:checked ~ .cards #song-3, #item-5:checked ~ .cards #song-4, #item-6:checked ~ .cards #song-5 , #item-7:checked ~ .cards #song-6, #item-8:checked ~ .cards #song-7, #item-9:checked ~ .cards #song-8 {
   transform: translatex(-80%) scale(.8);
   z-index: 0;
 }
 
-#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-4, #item-4:checked ~ .cards #song-5, #item-5:checked ~ .cards #song-6, #item-6:checked ~ .cards #song-1 {
+#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-4, #item-4:checked ~ .cards #song-5, #item-5:checked ~ .cards #song-6, #item-6:checked ~ .cards #song-7 , #item-7:checked ~ .cards #song-8 , #item-8:checked ~ .cards #song-9 , #item-9:checked ~ .cards #song-1 {
   transform: translatex(80%) scale(.8);
   z-index: 0;
 }
 
-#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-4, #item-3:checked ~ .cards #song-5, #item-4:checked ~ .cards #song-6, #item-5:checked ~ .cards #song-1, #item-6:checked ~ .cards #song-2 {
+#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-4, #item-3:checked ~ .cards #song-5, #item-4:checked ~ .cards #song-6, #item-5:checked ~ .cards #song-7, #item-6:checked ~ .cards #song-8 , #item-7:checked ~ .cards #song-9, #item-8:checked ~ .cards #song-1, #item-9:checked ~ .cards #song-2 {
   transform: translatex(160%) scale(.6);
   z-index: 0;
 }
 
-#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3, #item-4:checked ~ .cards #song-4, #item-5:checked ~ .cards #song-5, #item-6:checked ~ .cards #song-6 {
+#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3, #item-4:checked ~ .cards #song-4, #item-5:checked ~ .cards #song-5, #item-6:checked ~ .cards #song-6, #item-7:checked ~ .cards #song-7, #item-8:checked ~ .cards #song-8, #item-9:checked ~ .cards #song-9 {
   transform: translatex(0) scale(1);
   opacity: 1;
   z-index: 1;
 }
 
-#item-1:checked ~ .cards #song-4, #item-2:checked ~ .cards #song-5, #item-3:checked ~ .cards #song-6, #item-4:checked ~ .cards #song-1, #item-5:checked ~ .cards #song-2, #item-6:checked ~ .cards #song-3 {
+#item-1:checked ~ .cards #song-4,
+#item-1:checked ~ .cards #song-5,
+#item-1:checked ~ .cards #song-6,
+#item-1:checked ~ .cards #song-7,
+#item-2:checked ~ .cards #song-5,
+#item-2:checked ~ .cards #song-6,
+#item-2:checked ~ .cards #song-7,
+#item-2:checked ~ .cards #song-8,
+#item-3:checked ~ .cards #song-6,
+#item-3:checked ~ .cards #song-7,
+#item-3:checked ~ .cards #song-8,
+#item-3:checked ~ .cards #song-9,
+#item-4:checked ~ .cards #song-1, 
+#item-4:checked ~ .cards #song-7,
+#item-4:checked ~ .cards #song-8,
+#item-4:checked ~ .cards #song-9,
+#item-5:checked ~ .cards #song-1, 
+#item-5:checked ~ .cards #song-2, 
+#item-5:checked ~ .cards #song-8,
+#item-5:checked ~ .cards #song-9,
+#item-6:checked ~ .cards #song-1,
+#item-6:checked ~ .cards #song-2,
+#item-6:checked ~ .cards #song-3,
+#item-6:checked ~ .cards #song-9,
+#item-7:checked ~ .cards #song-1,
+#item-7:checked ~ .cards #song-2,
+#item-7:checked ~ .cards #song-3,
+#item-7:checked ~ .cards #song-4,
+#item-8:checked ~ .cards #song-2,
+#item-8:checked ~ .cards #song-3,
+#item-8:checked ~ .cards #song-4,
+#item-8:checked ~ .cards #song-5,
+#item-9:checked ~ .cards #song-3,
+#item-9:checked ~ .cards #song-4,
+#item-9:checked ~ .cards #song-5,
+#item-9:checked ~ .cards #song-6 {
   transform: translatex(120) scale(.2);
   opacity: 0;
   z-index: 0;
