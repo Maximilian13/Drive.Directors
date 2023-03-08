@@ -196,10 +196,27 @@ img {
       font-size:0;}
 }
 
+@keyframes show-elements {
+  from {opacity: 0;
+    width: 0%;
+    display: none;
+    font-size:0;}
+  to {opacity: 1;
+    width: 100%;
+    display: block;
+    font-size:27px;}
+}
+
 @keyframes hide-player {
   from {opacity: 1;}
   to {opacity: 0;
     z-index: 0;}
+}
+
+@keyframes show-player {
+  from {opacity: 0;}
+  to {opacity: 1;
+    z-index: 1;}
 }
 
 .popup-animation-player {
@@ -211,8 +228,25 @@ img {
   animation: hide-elements 2s ease-in-out forwards;
 }
 
+.show-character {
+  animation: show-elements 2s ease-in-out forwards;
+}
+
 .hide-player {
   animation: hide-player 2s ease-in-out forwards;
+}
+
+.show-player {
+  animation: show-player 2s ease-in-out forwards;
+}
+
+@keyframes hide {
+  from {opacity: 1; transform: translatex(-160%) scale(1); color:rgb(0, 0, 0)}
+  to {opacity: 0; transform: translatex(0%) scale(1); color:rgb(0, 0, 0)}
+}
+
+.hide {
+  animation: hide 2s ease-in-out forwards;
 }
 
 @keyframes show-popup {
@@ -268,12 +302,16 @@ img {
   margin-left: 15px;
 }
 
+#person-name {
+  margin-left: 15px;
+}
+
 .popup-content #person-cristalls {
   font-size: 72px;
 }
 
 .popup-content #person-cristalls img {
-  width: 110px;
+  width: 80px;
 }
 
 #person-param label {
@@ -284,6 +322,16 @@ img {
   width: 25%;
 }
 
+#close-popup {
+  font-size: 36px;
+  background-color: white;
+  border: none;
+  font-family: 'Press Start 2P', cursive;
+  position: absolute;
+  top: 240px;
+  left: 1215px;
+}
+
 .character-level {
   text-align: center;
   font-family: 'Press Start 2P', cursive;
@@ -291,3 +339,19 @@ img {
   font-size: 27px;
 }
 
+#shop {
+  position: absolute;
+  top: 2%;
+  left: 0%;
+  padding: 20px;
+  background: none;
+  border: none;
+}
+
+#shop:hover {
+  filter: grayscale(.75)
+}
+
+#shop img {
+  width: 300px;
+}
